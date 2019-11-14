@@ -1,4 +1,5 @@
 pipeline {
+<<<<<<< HEAD
     agent {
         docker {
             image 'maven:3-alpine'
@@ -22,4 +23,15 @@ pipeline {
             }
         }
     }
+=======
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        sh 'docker logs -f jenkins'
+      }
+    }
+
+  }
+>>>>>>> adb88bc10c168eb3c649d36c7ab8e0bd0fa01230
 }
